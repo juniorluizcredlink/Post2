@@ -8,7 +8,7 @@
 
     <body>
 <center>
-<h1>Atualizado 2</h1>
+<h1>Atualizado 3</h1>
 <form method="post" id="infoForm">
     <input type="text" name="firt_name" id="firt_name" value="" placeholder="Firt Name"  />   <br /> <br />
     <input type="text" name="last_last_name" id="last_last_name" value="" placeholder="Last Name"  />   <br /> <br />
@@ -24,12 +24,13 @@ $('#infoForm').submit(function() {
     var postTo = 'https://www.cartaodecreditoconsignado.com.br/post.php';
 
     $.post(postTo,({first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), email: $('[name=email]').val()}),
+   
     function(data) {
         alert(data);
         if(data != "") {
             // do something
         } else {
-            // couldn't connect
+            alert("couldn't connect")
         }
         },'json');
     return false;
@@ -41,7 +42,7 @@ $('#infoForm').submit(function() {
 
 
     </center>
-        <script type="text/javascript" src="cordova.js"></script>
+      <!--  <script type="text/javascript" src="cordova.js"></script> -->
     </body>
 </html>
 
