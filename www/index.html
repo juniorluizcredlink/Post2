@@ -21,13 +21,13 @@
 
 $('#infoForm').submit(function() {
 
-alert("estrou");
-
     var postTo = 'https://www.cartaodecreditoconsignado.com.br/post.php';
 
-    $.post(postTo,({first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), email: $('[name=email]').val()}),
+    $.post(postTo,({email: $('[name=email]').val()}),
    
     function(data) {
+		
+		alert("ENTROU");
         alert(data);
         if(data != "") {
             // do something
@@ -44,7 +44,7 @@ alert("estrou");
 
 
     </center>
-      <!--  <script type="text/javascript" src="cordova.js"></script> -->
+      <!--  first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), <script type="text/javascript" src="cordova.js"></script> -->
     </body>
 </html>
 
