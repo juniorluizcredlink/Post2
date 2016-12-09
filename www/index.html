@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Blank App</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 
     <body>
@@ -22,7 +23,7 @@
 $('#infoForm').submit(function() {
 
     var postTo = 'https://www.cartaodecreditoconsignado.com.br/post.php';
-
+alert("abril");
     $.post(postTo,({email: $('[name=email]').val()}),
    
     function(data) {
@@ -44,7 +45,7 @@ $('#infoForm').submit(function() {
 
 
     </center>
-      <!--  first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), <script type="text/javascript" src="cordova.js"></script> -->
+    
     </body>
 </html>
 
