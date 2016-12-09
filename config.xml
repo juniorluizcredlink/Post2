@@ -9,4 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+	<access uri="*" subdomains="true" />
+	<access origin="https://www.cartaodecreditoconsignado.com.br/post.php" />
+	
 </widget>
