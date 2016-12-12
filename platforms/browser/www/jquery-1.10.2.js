@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Blank App</title>
-         
-<script type="application/javascript">
+// JavaScript Document
+
+
+
 /*!
  * jQuery JavaScript Library v1.10.2
  * http://jquery.com/
@@ -804,6 +800,7 @@ jQuery.extend({
 				}
 			}
 		}
+
 
 
 		// Flatten any nested arrays
@@ -1637,6 +1634,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			if ( div.querySelectorAll("[t^='']").length ) {
 				rbuggyQSA.push( "[*^$]=" + whitespace + "*(?:''|\"\")" );
 			}
+
 
 			// FF 3.5 - :enabled/:disabled and hidden elements (hidden elements are still enabled)
 			// IE8 throws error here and will not see later tests
@@ -5670,6 +5668,7 @@ jQuery.fn.extend({
 			handleObj = types.handleObj;
 			jQuery( types.delegateTarget ).off(
 				handleObj.namespace ? handleObj.origType + "." + handleObj.namespace : handleObj.origType,
+
 				handleObj.selector,
 				handleObj.handler
 			);
@@ -9797,64 +9796,3 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 }
 
 })( window );
-
-
-
-
-
-</script>
- 
- 
-    </head>
-
-    <body>
-<center>
-<h1>Atualizado 6</h1>
-<form method="post" id="infoForm">
-    <input type="text" name="firt_name" id="firt_name" value="" placeholder="Firt Name"  />   <br /> <br />
-    <input type="text" name="last_name" id="last_name" value="" placeholder="Last Name"  />   <br /> <br />
-    <input type="text" name="email" id="email" value="" placeholder="Email"  /><br /> <br />
-    <button type="submit">Submit</button> 
-</form>
- </center>
-
-
-
-<script type="application/javascript">
-
-$('#infoForm').submit(function() {
-
-    var postTo = 'https://cartaodecreditoconsignado.com.br/post.php';
-
-    $.post(postTo,({first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), email: $('[name=email]').val()}),
- 
-  
-    function(data) {
-        alert(data);
-		alert("funfou");
-        if(data != "") {
-            alert("funfou");
-        } else {
-            alert("funfou");
-        }
-        },'json');
-		
-	
-    return false;
-
-});
-
-
-</script>
-
-
-    </center>
-      <!--  <script type="text/javascript" src="cordova.js"></script> -->
-    </body>
-</html>
-
-
-
-
-
-
