@@ -7,8 +7,8 @@
             <intent-filter android:label="@string/launcher_name">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-					<access origin="http://evorion.com.br/post.php" />
-					<access uri="http://evorion.com.br/post.php" />
+                <access origin="http://evorion.com.br/post.php" />
+                <access uri="http://evorion.com.br/post.php" />
             </intent-filter>
         </activity>
     </application>
