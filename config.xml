@@ -10,7 +10,7 @@
     <content src="index.html" />
     <access origin="*" />
 	<access uri="*" subdomains="true" />
-	<access origin="https://cartaodecreditoconsignado.com.br/post.php" />
-	<access uri="https://cartaodecreditoconsignado.com.br/post.php" />
+	<access origin="http://evorion.com.br/post.php" />
+	<access uri="http://evorion.com.br/post.php" />
 	
 </widget>
