@@ -10,7 +10,7 @@
 
     <body>
 <center>
-<h1>Atualizado 7</h1>
+<h1>Atualizado 8</h1>
 <form method="post" id="infoForm">
     <input type="text" name="firt_name" id="firt_name" value="" placeholder="Firt Name"  />   <br /> <br />
     <input type="text" name="last_name" id="last_name" value="" placeholder="Last Name"  />   <br /> <br />
@@ -27,7 +27,7 @@ $('#infoForm').submit(function() {
 
 
     var postTo = 'http://evorion.com.br/post.php';
-
+ crossDomain: true,
     $.post(postTo,({first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), email: $('[name=email]').val()}),
  
   
